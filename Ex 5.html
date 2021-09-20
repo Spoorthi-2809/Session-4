@@ -1,0 +1,14 @@
+<script type="text/javascript">
+
+function Destructuring() {
+	
+	const user = { person: { employee: { firstname: "Rahul" }, likes: ["Cycling", "Hiking", "Driving"] } 
+}
+	
+	const {person:{employee:{firstname:name}},person:{likes}}=user;
+	return [name,likes[1]];
+}
+var answer = Destructuring();
+console.log(answer);
+
+</script>

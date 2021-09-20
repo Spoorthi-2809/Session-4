@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+
+	function unique(arr) {
+		var array = [];
+
+    for (str of arr) {
+    if (!array.includes(str)) {
+      array.push(str);
+    }
+		
+  }
+
+  return array;
+}
+
+let values = ["green", "green", "red", "red",
+  "yellow", "pink", "pink", "yellow"];
+
+console.log("Unique values are", unique(values));
+
+</script>
